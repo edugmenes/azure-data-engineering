@@ -19,7 +19,7 @@ The solution covers:
 
 
 ## 🏗️ Architecture
-![Architecture Diagram](<Captura de tela 2026-01-20 123843.png>)
+![Architecture Diagram](/images/Captura%20de%20tela%202026-01-20%20123843.png)
 
 ### Azure Event Hubs
 Purpose: Real-time data ingestion
