@@ -23,42 +23,52 @@ The solution covers:
 
 ### Azure Event Hubs
 Purpose: Real-time data ingestion
+
 Role in project:
 - Captures streaming events (clicks, logs, IoT, transactions)
 - Highly scalable and fault tolerant
+
 ✨ Without Event Hubs: You’d miss live data or overload systems
 
 ### Azure Data Factory (ADF)
 Purpose: Orchestration & batch ingestion
+
 Role in project:
 - Schedules pipelines
 - Moves data from source → data lake
 - Triggers Databricks jobs
+
 ✨ Think of it as the control center
 
 ### Azure Databricks (Apache Spark)
 Purpose: Data processing & transformation
+
 Role in project:
 - Processes huge volumes of data efficiently
 - Implements Bronze → Silver → Gold logic
 - Handles both batch and streaming data
+
 ✨ This is the engine of the architecture
 
 ### Azure Data Lake Storage Gen2 (ADLS)
 Purpose: Central storage layer
+
 Role in project:
 - Stores all data (Bronze, Silver, Gold)
 - Cheap, scalable, secure
 - Optimized for analytics
+
 ✨ This is your single source of truth
 
 ### Delta Lake
 Purpose: Reliability & governance on top of ADLS
+
 Role in project:
 - ACID transactions
 - Schema enforcement
 - Time travel (data versioning)
 - Efficient reads/writes
+
 ✨ Delta Lake turns “files” into real analytical tables
 
 
