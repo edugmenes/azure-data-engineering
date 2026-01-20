@@ -79,18 +79,12 @@ Role in project:
 ## 🧮 Data Model
 The project is structured using the **Medallion Architecture** 
 
-Azure Subscription
-
- └── Resource Group
-
-      └── Storage Account (Azure Delta Lake Storage Gen2 () enabled)
-
-           └── Container / File System
-
+    Azure Subscription
+    └── Resource Group
+        └── Storage Account (Azure Delta Lake Storage Gen2 () enabled)
+            └── Container / File System
                 ├── bronze/
-
                 ├── silver/
-                
                 └── gold/
 
 ### 🟤 Bronze Layer
