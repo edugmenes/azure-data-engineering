@@ -22,6 +22,7 @@ The solution covers:
 ![Architecture Diagram](<Captura de tela 2026-01-20 123843.png>)
 
 **Azure Event Hubs**
+
 Purpose: Real-time data ingestion
 
 Role in project:
@@ -31,6 +32,7 @@ Role in project:
 ✨ Without Event Hubs: You’d miss live data or overload systems
 
 **Azure Data Factory (ADF)**
+
 Purpose: Orchestration & batch ingestion
 
 Role in project:
@@ -41,6 +43,7 @@ Role in project:
 ✨ Think of it as the control center
 
 **Azure Databricks (Apache Spark)**
+
 Purpose: Data processing & transformation
 
 Role in project:
@@ -77,11 +80,17 @@ Role in project:
 The project is structured using the **Medallion Architecture** 
 
 Azure Subscription
+
  └── Resource Group
+
       └── Storage Account (Azure Delta Lake Storage Gen2 () enabled)
+
            └── Container / File System
+
                 ├── bronze/
+
                 ├── silver/
+                
                 └── gold/
 
 ### 🟤 Bronze Layer
