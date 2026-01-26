@@ -74,15 +74,43 @@ Role in project:
 
 
 ## 🧮 Data Model
-The project is structured using the **Medallion Architecture** 
+The project is structured using a **Medallion Architecture** 
 
-    Azure Subscription
-    └── Resource Group
-        └── Storage Account (Azure Delta Lake Storage Gen2 () enabled)
-            └── Container / File System
-                ├── bronze/
-                ├── silver/
-                └── gold/
+    <storage-account>/<container>/
+    │
+    └── projet1/
+        ├── resources/                  # Source and target data
+        │   ├── source/                 # CSV/Parquet files received from the source
+        │   └── target/                 # Exports (CSV, Excel, Parquet) for customers
+        │
+        ├── 01-bronze/                  # Raw data
+        │   ├── customers/
+        │   │   └── customers.pq
+        │   ├── sales/
+        │   │   └── sales.pq
+        │   ...
+        │    
+        ├── 02-silver/                  # Clean data
+        │   ├── customers/
+        │   │   └── customers.pq
+        │   ├── sales/
+        │   │   └── sales.pq
+        │   ...
+        │
+        ├── 03-gold/                    # Aggregated data
+        │   ├── sales_per_category/
+        │   ├── sales_per_city/
+        │   ...
+        │
+        ├── metadata/                   # Metadata and logs
+        │   ├── bronze/
+        │   ├── silver/
+        │   ├── gold/
+        │   ├── ddl/                    # CREATE TABLE scripts
+        │   ├── logs/                   # ETL execution logs
+        │   └── checkpoints/            # Autoloader checkpoints / streaming
+        │
+        └── tmp/                        # Temporary staging
 
 ### 🟤 Bronze Layer
 - Raw data ingestion

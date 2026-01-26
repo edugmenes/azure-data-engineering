@@ -1,38 +1,38 @@
 [
     {
         "file_name": "categories.csv",
-        "folder_path": "01-bronze/production/categories"
+        "folder_path": "resource/origin/categories"
     },
     {
         "file_name": "products.csv",
-        "folder_path": "01-bronze/production/products"
+        "folder_path": "resource/origin/products"
     },
     {
         "file_name": "stocks.csv",
-        "folder_path": "01-bronze/production/stocks"
+        "folder_path": "resource/origin/stocks"
     },
     {
         "file_name": "brands.csv",
-        "folder_path": "01-bronze/production/brands"
+        "folder_path": "resource/origin/brands"
     },
     {
         "file_name": "customers.csv",
-        "folder_path": "01-bronze/sales/customers"
+        "folder_path": "resource/origin/customers"
     },
     {
         "file_name": "orders.csv",
-        "folder_path": "01-bronze/sales/orders"
+        "folder_path": "resource/origin/orders"
     },
     {
         "file_name": "staffs.csv",
-        "folder_path": "01-bronze/sales/staffs"
+        "folder_path": "resource/origin/staffs"
     },
     {
         "file_name": "stores.csv",
-        "folder_path": "01-bronze/sales/stores"
+        "folder_path": "resource/origin/stores"
     },
     {
         "file_name": "order_items.csv",
-        "folder_path": "01-bronze/sales/order_items"
+        "folder_path": "resource/origin/order_items"
     }
 ]
