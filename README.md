@@ -93,9 +93,10 @@ The project is structured using a **Medallion Architecture**
         ├── 02-silver/                  # Clean data
         │   ├── customers/
         │   │   └── customers.parquet
-        │   ├── sales/
-        │   │   └── sales.parquet
-        │   ...
+        │   ├── products/
+        │   │   └── products.parquet
+        │   └── orders/
+        │       └── orders.parquet
         │
         ├── 03-gold/                    # Aggregated data
         │   ├── sales_per_category/
@@ -151,7 +152,7 @@ Through this project, I gained hands-on experience with:
 
 ## 📌 Notes
 
-This is a **learning project**, created to apply theoretical concepts in a practical environment using industry-standard tools.
+This is a **personal project**, created to apply theoretical concepts in a practical environment using industry-standard tools.
 
 Future improvements may include:
 - Pipeline orchestration
